@@ -45,3 +45,10 @@ ng generate pipe nombre-de-la-pipe
 Para obtener más información sobre Angular CLI, consulta la documentación oficial: https://angular.io/cli
 
 ### firebase deploy --only hosting:interruta-pasengers
+
+## Usar estilos personalizados 
+
+            "styles": [
+              "src/assets/scss/style.scss", "@angular/material/prebuilt-themes/indigo-pink.css", 
+              "src/styles.sass"
+            ],

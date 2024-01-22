@@ -1,0 +1,68 @@
+<mat-toolbar class="topbar">
+  <!-- Mobile Menu -->
+  <button mat-icon-button (click)="toggleMobileNav.emit()" *ngIf="!showToggle">
+    icono i-tabler
+  </button>
+  <!-- --------------------------------------------------------------- -->
+
+  <!-- --------------------------------------------------------------- -->
+  <!-- Notification Dropdown -->
+  <!-- --------------------------------------------------------------- -->
+
+  <button mat-icon-button aria-label="Notifications">
+    icono i-tabler
+  </button>
+
+  <span class="flex-1-auto"></span>
+
+  <!-- --------------------------------------------------------------- -->
+  <!-- profile Dropdown -->
+  <!-- --------------------------------------------------------------- -->
+  <a
+    mat-flat-button
+    color="primary"
+    href="https://www.wrappixel.com/templates/spike-angular-admin-template/"
+    target="_blank"
+    class="d-flex justify-content-center"
+  >
+    Upgrade to Pro
+  </a>
+  <button
+    mat-icon-button
+    [matMenuTriggerFor]="profilemenu"
+    aria-label="Notifications" class="m-l-10"
+  >
+    <img
+      src="/assets/images/profile/user-1.jpg"
+      class="rounded-circle object-cover"
+      width="35"
+    />
+  </button>
+  <mat-menu #profilemenu="matMenu" xPosition="before" class="topbar-dd cardWithShadow">
+    <button mat-menu-item>
+      <mat-icon class="d-flex align-items-center"
+        >icono i-tabler</mat-icon
+      >My Profile
+    </button>
+    <button mat-menu-item>
+      <mat-icon class="d-flex align-items-center"
+        >icono i-tabler</mat-icon
+      >My Account
+    </button>
+    <button mat-menu-item>
+      <mat-icon class="d-flex align-items-center"
+        >icono i-tabler</mat-icon
+      >My Task
+    </button>
+
+    <div class="p-x-12 m-t-12">
+      <a
+        [routerLink]="['/authentication/login']"
+        mat-flat-button
+        color="primary"
+        class="w-100"
+        >Logout</a
+      >
+    </div>
+  </mat-menu>
+</mat-toolbar>
