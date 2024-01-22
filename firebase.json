@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "interruta-pasengers",
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

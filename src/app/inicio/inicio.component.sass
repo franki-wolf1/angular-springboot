@@ -1,0 +1,13 @@
+//@use 'anidacion'    _anidacion
+
+$color-princis: #fff
+
+p
+    color: color-princis  
+
+@mixin caja_personalizada($fondo: #fff) 
+    background-color: color-princis
+
+.caja
+    @include caja_personalizada
+    

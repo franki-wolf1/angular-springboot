@@ -27,3 +27,21 @@
 <br></br>
 💬 wwww.franki-briones.web.app
 <br></br>
+
+###  A continuación se muestran algunos comandos adicionales que puedes usar para trabajar con tu proyecto Angular:
+
+Para compilar el proyecto, usa el siguiente comando:
+ng build
+Para iniciar el servidor de desarrollo, usa el siguiente comando:
+ng serve
+Para generar un nuevo componente, usa el siguiente comando:
+ng generate component nombre-del-componente
+Para generar un nuevo servicio, usa el siguiente comando:
+ng generate service nombre-del-servicio
+Para generar una nueva directiva, usa el siguiente comando:
+ng generate directive nombre-de-la-directiva
+Para generar una nueva pipe, usa el siguiente comando:
+ng generate pipe nombre-de-la-pipe
+Para obtener más información sobre Angular CLI, consulta la documentación oficial: https://angular.io/cli
+
+### firebase deploy --only hosting:interruta-pasengers
