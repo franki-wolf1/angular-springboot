@@ -1,7 +1,7 @@
 <mat-toolbar class="topbar">
   <!-- Mobile Menu -->
   <button mat-icon-button (click)="toggleMobileNav.emit()" *ngIf="!showToggle">
-    icono i-tabler
+    <i-tabler name="menu-2" class="icon-20 d-flex"></i-tabler>
   </button>
   <!-- --------------------------------------------------------------- -->
 
@@ -10,7 +10,7 @@
   <!-- --------------------------------------------------------------- -->
 
   <button mat-icon-button aria-label="Notifications">
-    icono i-tabler
+    <i-tabler class="d-flex" name="bell" matBadge="9" matBadgeColor="primary"></i-tabler>
   </button>
 
   <span class="flex-1-auto"></span>
@@ -41,17 +41,20 @@
   <mat-menu #profilemenu="matMenu" xPosition="before" class="topbar-dd cardWithShadow">
     <button mat-menu-item>
       <mat-icon class="d-flex align-items-center"
-        >icono i-tabler</mat-icon
+        ><i-tabler name="user" class="icon-18 d-flex"></i-tabler></mat-icon
       >My Profile
     </button>
     <button mat-menu-item>
       <mat-icon class="d-flex align-items-center"
-        >icono i-tabler</mat-icon
+        ><i-tabler name="mail" class="icon-18 d-flex"></i-tabler></mat-icon
       >My Account
     </button>
     <button mat-menu-item>
       <mat-icon class="d-flex align-items-center"
-        >icono i-tabler</mat-icon
+        ><i-tabler
+          name="list-check"
+          class="icon-18 d-flex"
+        ></i-tabler></mat-icon
       >My Task
     </button>
 

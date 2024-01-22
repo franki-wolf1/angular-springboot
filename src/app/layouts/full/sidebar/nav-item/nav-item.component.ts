@@ -3,15 +3,17 @@ import { NavItem } from './nav-item';
 import { Router } from '@angular/router';
 import { NavService } from '../../../../mservices/nav.service';
 import { CommonModule } from '@angular/common';
+import { IconsModule } from '../../../../icons.module';
 
 @Component({
   selector: 'app-nav-item',
   templateUrl: './nav-item.component.html',
-  styleUrls: [],
+  styleUrls: ['./nav-item.component.scss'],
   encapsulation: ViewEncapsulation.None,
   standalone: true,
   imports: [
-    CommonModule,]
+    CommonModule,
+    IconsModule,]
 })
 export class AppNavItemComponent implements OnChanges {
   @Input() item: NavItem | any;

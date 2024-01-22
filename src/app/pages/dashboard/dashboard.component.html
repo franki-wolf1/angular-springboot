@@ -12,7 +12,8 @@
               mat-icon-button
               [matMenuTriggerFor]="menu"
               aria-label="Example icon-button with a menu"
-            > 
+            >
+              <i-tabler name="dots-vertical"></i-tabler>
             </button>
             <mat-menu #menu="matMenu" xPosition="before">
               <button mat-menu-item>
@@ -26,7 +27,19 @@
               </button>
             </mat-menu>
           </div>
-        </div> 
+        </div>
+        <apx-chart
+          [series]="profitExpanceChart.series"
+          [dataLabels]="profitExpanceChart.dataLabels"
+          [chart]="profitExpanceChart.chart"
+          [legend]="profitExpanceChart.legend"
+          [xaxis]="profitExpanceChart.xaxis"
+          [yaxis]="profitExpanceChart.yaxis"
+          [grid]="profitExpanceChart.grid"
+          [stroke]="profitExpanceChart.stroke"
+          [tooltip]="profitExpanceChart.tooltip"
+          [plotOptions]="profitExpanceChart.plotOptions"
+        ></apx-chart>
       </mat-card-content>
     </mat-card>
   </div>
@@ -49,7 +62,8 @@
                   <button
                     mat-mini-fab
                     class="bg-light-success text-success shadow-none icon-27"
-                  > aaasasas
+                  >
+                    <i-tabler name="arrow-up-right" class="icon-20"></i-tabler>
                   </button>
                   <div class="mat-body-1 f-w-600 m-l-12">+9%</div>
                   <div class="mat-body-1 m-l-4">last year</div>
@@ -57,17 +71,34 @@
 
                 <div class="d-flex align-items-center m-t-32">
                   <div class="d-flex align-items-center">
-                    aaasasas
+                    <i-tabler
+                      name="circle-filled"
+                      class="text-primary icon-12 d-flex"
+                    ></i-tabler>
                     <div class="mat-body-1 m-l-12">Oragnic</div>
                   </div>
                   <div class="d-flex align-items-center m-l-16">
-                    aaasasas
+                    <i-tabler
+                      name="circle-filled"
+                      class="text-error icon-12 d-flex"
+                    ></i-tabler>
                     <div class="mat-body-1 m-l-12">Refferal</div>
                   </div>
                 </div>
               </div>
               <div class="col-5 d-flex align-items-start">
-                xxxxxxxxxxxxxxxxxxxxx
+                <apx-chart
+                  [series]="trafficChart.series"
+                  [labels]="trafficChart.labels"
+                  [dataLabels]="trafficChart.dataLabels"
+                  [chart]="trafficChart.chart"
+                  [legend]="trafficChart.legend"
+                  [colors]="trafficChart.colors"
+                  [stroke]="trafficChart.stroke"
+                  [tooltip]="trafficChart.tooltip"
+                  [plotOptions]="trafficChart.plotOptions"
+                  [responsive]="trafficChart.responsive"
+                ></apx-chart>
               </div>
             </div>
           </mat-card-content>
@@ -82,7 +113,10 @@
             <mat-card-title>Product Sales</mat-card-title>
             <div class="m-l-auto">
               <button mat-fab color="warn" class="shadow-none icon-48">
-                aaasasas
+                <i-tabler
+                  name="currency-dollar"
+                  class="text-white d-flex"
+                ></i-tabler>
               </button>
             </div>
           </mat-card-header>
@@ -93,13 +127,23 @@
                 mat-mini-fab
                 class="bg-light-error text-error shadow-none icon-27"
               >
-              aaasasas
+                <i-tabler name="arrow-down-right" class="icon-20"></i-tabler>
               </button>
               <div class="mat-body-1 f-w-600 m-l-12">+9%</div>
               <div class="mat-body-1 m-l-4">last year</div>
             </div>
           </mat-card-content>
-          aaasasas
+          <apx-chart
+            [series]="salesChart.series"
+            [dataLabels]="salesChart.dataLabels"
+            [chart]="salesChart.chart"
+            [legend]="salesChart.legend"
+            [colors]="salesChart.colors"
+            [stroke]="salesChart.stroke"
+            [tooltip]="salesChart.tooltip"
+            [plotOptions]="salesChart.plotOptions"
+            [responsive]="salesChart.responsive"
+          ></apx-chart>
         </mat-card>
       </div>
     </div>
@@ -280,7 +324,7 @@
           class="icon-30 cart-btn"
           matTooltip="Add to Cart"
         >
-          aaaaaaaaaaaa
+          <i-tabler name="basket" class="icon-16"></i-tabler>
         </button>
         <mat-card-title class="mat-headline-2 f-s-16 m-b-4">{{
           productcard.title
@@ -294,15 +338,20 @@
           </div>
           <div class="m-l-auto d-flex gap-4">
             <span
-              >productcards</span>
+              ><i-tabler name="star" class="fill-warning icon-18"></i-tabler
+            ></span>
             <span
-              >productcards</span>
+              ><i-tabler name="star" class="fill-warning icon-18"></i-tabler
+            ></span>
             <span
-              >productcards</span>
+              ><i-tabler name="star" class="fill-warning icon-18"></i-tabler
+            ></span>
             <span
-              >productcards</span>
+              ><i-tabler name="star" class="fill-warning icon-18"></i-tabler
+            ></span>
             <span
-              >productcards</span>
+              ><i-tabler name="star" class="fill-warning icon-18"></i-tabler
+            ></span>
           </div>
         </div>
       </mat-card-content>

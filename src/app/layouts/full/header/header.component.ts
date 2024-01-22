@@ -13,22 +13,26 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router'; 
+import { IconsModule } from '../../../icons.module';
 
+// icons 
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   encapsulation: ViewEncapsulation.None,
   standalone: true,
-  imports: [
+  imports: [ 
+    IconsModule,
     MatButtonModule,
     MatMenuModule,
     MatIconModule, 
     MatCardModule, 
     MatTableModule, 
     MatToolbarModule,
-    RouterModule
+    RouterModule,
+    CommonModule
   ],
 })
 export class HeaderComponent {

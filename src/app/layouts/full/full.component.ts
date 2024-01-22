@@ -7,7 +7,6 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
-import { CommonModule } from '@angular/common'; 
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HeaderComponent } from './header/header.component';
 import { RouterOutlet } from '@angular/router';
@@ -31,8 +30,7 @@ const MONITOR_VIEW = 'screen and (min-width: 1024px)';
     MatIconModule, 
     MatCardModule, 
     MatTableModule,
-    MatSidenavModule, 
-    CommonModule,
+    MatSidenavModule
   ],
 })
 export class FullComponent implements OnInit {

@@ -8,6 +8,7 @@ import { ExtraRoutes } from './extra.routing';
 import { AppIconsComponent } from './icons/icons.component';
 import { AppSamplePageComponent } from './sample-page/sample-page.component';
 import { MaterialModule } from '../../material.module';
+import { IconsModule } from '../../icons.module';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { MaterialModule } from '../../material.module';
     FormsModule,
     ReactiveFormsModule, 
     MaterialModule,
+    IconsModule,
   ],
   declarations: [
     AppIconsComponent,
