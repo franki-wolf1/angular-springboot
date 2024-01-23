@@ -1,12 +1,11 @@
-<div mat-subheader *ngIf="item.navCap" class="nav-caption">
+<div mat-subheader *ngIf="item.navCap" class="nav-caption mt-4">
   {{ item.navCap }}
 </div>
-asdsdsdsdas
 <a
   mat-list-item
   (click)="onItemSelected(item)"
   [ngClass]="{
-    'mat-toolbar btn mat-primary activeMenu': item.route
+    'mat-toolbar mat-primary activeMenu': item.route
       ? router.isActive(item.route, true)
       : false,
   }"

@@ -3,7 +3,7 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
-import { MatInputModule } from '@angular/material/input';
+import { MatFormField, MatInputModule, MatLabel } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -16,6 +16,7 @@ import { AuthenticationRoutes } from './authentication.routing';
 
 import { AppSideLoginComponent } from './login/login.component';
 import { AppSideRegisterComponent } from './register/register.component';
+import { DemoSpringBootComponent } from './demo-spring-boot/demo-spring-boot.component';
 
 @NgModule({
   imports: [
@@ -25,6 +26,8 @@ import { AppSideRegisterComponent } from './register/register.component';
     MatCardModule,
     MatInputModule,
     MatCheckboxModule,
+    MatLabel,
+    MatFormField,
     MatButtonModule,
     FormsModule,
     ReactiveFormsModule,
@@ -33,6 +36,7 @@ import { AppSideRegisterComponent } from './register/register.component';
   declarations: [
     AppSideLoginComponent,
     AppSideRegisterComponent,
+    DemoSpringBootComponent
   ],
 })
 export class AuthenticationModule {}

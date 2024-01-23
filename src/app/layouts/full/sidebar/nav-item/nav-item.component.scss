@@ -1,5 +1,41 @@
-.btn {
-    text-align: center;
-    background-color: aliceblue;
-    color: black;
+// Estilo para el contenedor del subtítulo de navegación
+.mt-4{
+    margin-top: 55px;
 }
+
+.nav-caption {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .hide-menu {
+    color: #0f0f0f;
+    width: 90%;
+}
+  
+  // Estilo para el botón
+  .menu-list-item {
+    display: flex; 
+    align-items: center;
+    padding: 15px; 
+    border-radius: 25px 12px; 
+  
+    &.primary {
+      background-color: #3498db;
+      color: #b84a4a;
+  
+      &:hover {
+        background-color: #2980b9;
+      }
+    }
+  
+    .routeIcon {
+      font-size: 24px;
+      margin-right: 10px;
+    } 
+  
+    &.activeMenu {
+      background-color: #2ecc71; // Color cuando el menú está activo
+    }
+  } 

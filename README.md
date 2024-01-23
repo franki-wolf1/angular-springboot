@@ -52,3 +52,10 @@ Para obtener más información sobre Angular CLI, consulta la documentación ofi
               "src/assets/scss/style.scss", "@angular/material/prebuilt-themes/indigo-pink.css", 
               "src/styles.sass"
             ],
+
+
+## Inicializar Firebase 
+            npm install firebase @angular/fire
+
+## npm remove @types/jasmine jasmine-core karma karma-chrome-launcher karma-coverage karma-jasmine karma-jasmine-html-reporter
+## npm install --save-dev jest jest-preset-angular @types/jest

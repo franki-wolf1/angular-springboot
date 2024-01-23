@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppComponent debe hacer mach con snapshot 1`] = `
+<div
+  id="root4"
+>
+  <router-outlet />
+  
+</div>
+`;
